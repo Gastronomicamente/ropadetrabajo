@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- Declara que este documento es de tipo HTML5 -->
+<html lang="es"> <!-- Abre el documento HTML y define el idioma principal como español -->
+  <head> <!-- Abre la sección de metadatos, configuración y enlaces -->
+    <meta charset="UTF-8"> <!-- Configura la codificación para leer tildes y eñes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la escala a celulares y tablets -->
+    <title>Gastronómicamente - Delantales y Faldones</title> <!-- Título específico de esta sección -->
+    <link rel="stylesheet" href="style4.css"> <!-- Sugerencia: podés unificar todos los CSS en un solo style1.css -->
+  </head>
+
+  <body> <!-- Abre el cuerpo visible de la página web -->
+
+    <!-- Contenedor principal que envuelve y centra visualmente toda la tarjeta -->
+    <main class="contenedor-principal">
+
+      <!-- Encabezado que agrupa el título de la marca y su subtítulo -->
+      <header class="header-marca">
+        <h1>GASTRONÓMICAMENTE</h1> <!-- Título principal de la marca (único H1 por página) -->
+        <h2>Indumentaria de trabajo</h2> <!-- Subtítulo descriptivo de la marca -->
+      </header>
+
+      <!-- Separador visual decorativo -->
+      <div class="separador" aria-hidden="true">
+        <span>✧ ✄ ✧</span>
+      </div>
+
+      <!-- Sección semántica que agrupa la información del producto -->
+      <section class="card-producto">
+        <h3>DELANTALES Y FALDONES</h3> <!-- Título de sección unificado en mayúsculas -->
+
+        <!-- Contenedor que agrupa las 5 fotografías de los modelos -->
+        - <div class="contenedor-imagen">
+
+
+        <!-- Contenedor principal que agrupa todas las fotos y las alinea en fila con Flexbox -->
+        <div class="contenedor-imagen">
+
+          <!-- Producto 1: Abre la tarjeta individual que agrupa título, foto y pie de imagen -->
+          <figure class="item-foto">
+            <h4>Delantal de Acrocel</h4> <!-- Título del primer modelo -->
+            <img src="delantaldeacrocel.jpg" alt="Delantal de Acrocel"> <!-- Carga la imagen y define su texto alternativo -->
+            <figcaption class="etiqueta-img">Public Image</figcaption> <!-- Pie de foto aclaratorio debajo de la imagen -->
+          </figure> <!-- Cierra la tarjeta del primer producto -->
+
+          <!-- Producto 2: Abre la segunda tarjeta individual -->
+          <figure class="item-foto">
+            <h4>Delantal de Gabardina</h4> <!-- Título del segundo modelo -->
+            <img src="delantalgabardina.jpg" alt="Delantal de Gabardina"> <!-- Carga la imagen de gabardina -->
+            <figcaption class="etiqueta-img">Public Image</figcaption> <!-- Pie de foto debajo de la imagen -->
+          </figure> <!-- Cierra la tarjeta del segundo producto -->
+
+          <!-- Producto 3: Abre la tercera tarjeta individual -->
+          <figure class="item-foto">
+            <h4>Delantal de Jeans</h4> <!-- Título del tercer modelo -->
+            <img src="delantaljean.jpg" alt="Delantal de Jeans"> <!-- Carga la imagen de jeans -->
+            <figcaption class="etiqueta-img">Public Image</figcaption> <!-- Pie de foto debajo de la imagen -->
+          </figure> <!-- Cierra la tarjeta del tercer producto -->
+
+          <!-- Producto 4: Abre la cuarta tarjeta individual -->
+          <figure class="item-foto">
+            <h4>Delantal Impermeable</h4> <!-- Título del cuarto modelo -->
+            <img src="delantalimpermeable.jpg" alt="Delantal Impermeable"> <!-- Carga la imagen impermeable -->
+            <figcaption class="etiqueta-img">Public Image</figcaption> <!-- Pie de foto debajo de la imagen -->
+          </figure> <!-- Cierra correctamente la cuarta tarjeta antes de abrir la siguiente -->
+
+          <!-- Producto 5: Abre la quinta tarjeta de forma independiente -->
+          <figure class="item-foto">
+            <h4>Delantal Impermeable</h4> <!-- Título corregido para coincidir con la foto de bengalina -->
+            <img src="delantaleimpermeabler.jpg" alt="Delantal impermeable"> <!-- Carga la imagen de bengalina con su alt corregido -->
+            <figcaption class="etiqueta-img">Public Image</figcaption> <!-- Pie de foto debajo de la imagen -->
+          </figure> <!-- Cierra la tarjeta del quinto producto -->
+
+        </div> <!-- Cierra el contenedor general de la galería de imágenes -->
+        </div>
+
+        <!-- Contenedor que agrupa los párrafos informativos -->
+        <div class="info-detalles">
+
+          <!-- Especificaciones de colores y medidas disponibles -->
+          <p>
+            <strong>Colores:</strong> Blanco / Negro / Jean / Impermeable.<br>
+            <strong>Talle:</strong> Único regulable (con tiras de ajuste)
+          </p>
+
+          <!-- Precios actualizados según los modelos mostrados (modificá los valores reales) -->
+          <p class="precios-caja">
+            Acrocel: <span class="color-precio">$14.000.-</span><br>
+            Gabardina: <span class="color-precio">$14.000.-</span><br>
+            Jeans: <span class="color-precio">$18.000.-</span><br>
+            Impermeable: <span class="color-precio">$12.000.-</span>
+          </p>
+        </div>
+
+        <!-- Contenedor de botones de navegación -->
+        <nav class="contenedor-link" aria-label="Navegación entre categorías">
+          <a href="casacas.html">◀ Volver a Casacas</a>
+          <a href="index.html" class="link-home">Página Principal</a>
+          <a href="gorro-chef.html">Ir a Gorros de Chef ▶</a>
+        </nav>
+
+      </section> <!-- Cierra la sección del producto -->
+    </main> <!-- Cierra el contenedor principal -->
+  </body>
+</html>

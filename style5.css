@@ -1,0 +1,273 @@
+/* ==============================
+CONFIGURACIÓN GENERAL
+============================== */
+
+/* Aplica border-box para que los paddings no sumen ancho extra */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos de la página completa */
+body {
+  background-image: url("Fondogatronomic1.jpg"); /* Carga la imagen de fondo */
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita como mosaico */
+  background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+
+  margin: 0; /* Elimina los márgenes predeterminados del navegador */
+  padding: 20px; /* Deja un respiro alrededor de la pantalla */
+
+  font-family: Arial, Helvetica, sans-serif; /* Tipografía general con respaldos */
+  min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la pantalla */
+  display: flex; /* Activa Flexbox para alinear elementos */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* ==============================
+CONTENEDOR PRINCIPAL
+============================== */
+
+.contenedor-principal {
+  width: 100%; /* Ocupa el ancho disponible */
+  max-width: 900px; /* Limita el ancho máximo para que no se estire demasiado */
+  margin: auto; /* Centra automáticamente el contenedor */
+  padding: 30px; /* Espacio interno alrededor de la tarjeta */
+
+  background: rgba(0, 0, 0, 0.55); /* Fondo negro semitransparente */
+  -webkit-backdrop-filter: blur(4px); /* Soporte vidrio esmerilado en Safari / iOS */
+  backdrop-filter: blur(4px); /* Efecto de vidrio esmerilado */
+  border-radius: 35px; /* Redondeo equilibrado para no recortar contenido */
+  box-shadow: 0 10px 30px rgba(179, 77, 77, 0.77); /* Sombra difuminada rojiza */
+}
+
+/* ==============================
+TÍTULO PRINCIPAL Y SUBTÍTULO
+============================== */
+
+.header-marca {
+  text-align: center; /* Centra el texto del encabezado */
+  margin-bottom: 20px; /* Separa el encabezado de lo que sigue */
+}
+
+h1 {
+  background: rgba(169, 154, 154, 0.3); /* Fondo grisáceo semitransparente */
+  font-size: 28px; /* Tamaño grande para el título */
+  color: #4dd792; /* Color de texto verde menta */
+  padding: 15px 25px; /* Espacio interno del título */
+  border: 1px solid #737a9c; /* Borde fino decorativo gris azulado */
+  border-radius: 9999px; /* Esquinas redondeadas estilo píldora */
+  box-shadow: 0 4px 15px rgba(75, 141, 86, 0.4); /* Sombra verde sutil */
+  text-shadow: 2px 4px 5px #830296; /* Sombra violeta en las letras para legibilidad */
+  margin: 0 0 12px 0; /* Margen inferior para separarlo del subtítulo */
+}
+
+h2 {
+  font-size: 21px; /* Tamaño del subtítulo */
+  color: #231524; /* Texto lila claro */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  text-align: center; /* centra el titulo*/
+  text-shadow: 0 2px 3px #2fde9e; /* Resplandor verde detrás del texto */
+  margin: 0; /* Limpia márgenes por defecto */
+}
+
+.separador-hr {
+  border: 0; /* Elimina el borde predeterminado de la línea */
+  height: 2px; /* Altura o grosor de la línea */
+  background: #b53e3e; /* Color rojo de la línea */
+  margin: 20px 0; /* Margen arriba y abajo */
+}
+
+/* ==============================
+TÍTULOS H3, H4 Y PÁRRAFOS
+============================== */
+
+h3 {
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  font-size: 20px; /* Tamaño del texto */
+  text-align: center; /* Centrado */
+  color: #4dd792; /* Color de texto verde menta */
+  padding: 12px 20px; /* Espacio interno */
+  border-radius: 9999px; /* Esquinas redondeadas estilo píldora */
+  border: 2px solid #3e5cb5; /* Borde azul */
+  box-shadow: 2px 4px 12px #222; /* Sombra profunda */
+  text-shadow: 0 0 12px rgba(238, 248, 249, 0.6); /* Brillo suave en el texto */
+  margin: 15px 0; /* Margen superior e inferior */
+}
+
+h4 {
+  color: #dec4e1; /* Lila claro para títulos de cada modelo */
+  font-size: 17px; /* Tamaño equilibrado */
+  letter-spacing: 1px; /* Separación sutil de letras */
+  margin: 0 0 10px 0; /* Separación respecto a la foto */
+  text-shadow: 1px 1px 3px #000; /* Sombra para lectura */
+}
+
+p {
+  background: rgba(0, 0, 0, 0.75); /* Fondo oscuro para buena lectura */
+  font-size: 18px; /* Tamaño de fuente cómodo */
+  line-height: 1.8; /* Interlineado amplio */
+  text-align: center; /* Texto centrado */
+  color: #d9eddc; /* Verde muy claro */
+  padding: 15px 25px; /* Espacio interno para que el texto no toque los bordes */
+  border-radius: 20px; /* Esquinas redondeadas */
+  border: 1px solid #78d8e0; /* Borde celeste */
+  box-shadow: 2px 4px 12px #514b4b; /* Sombra gris */
+  text-shadow: 1px 1px 2px #0f0f0f; /* Sombra sutil */
+  margin: 15px 10px; /* Margen exterior */
+}
+
+/* ==============================
+IMAGEN Y ETIQUETA
+============================== */
+
+.contenedor-imagen {
+  display: flex; /* Organiza las fotos en grilla flexible */
+  justify-content: center; /* Centra las fotos */
+  gap: 25px; /* Espacio entre fotos */
+  flex-wrap: wrap; /* Permite acomodar varias filas automáticamente */
+  text-align: center; /* Centra el contenido de cada bloque */
+  margin: 20px 0; /* Márgenes superior e inferior */
+}
+
+.item-foto {
+  margin: 0; /* Quita el margen por defecto de <figure> */
+}
+
+img {
+  display: block; /* Convierte la imagen en bloque para usar márgenes automáticos */
+  width: 255px; /* Ancho equilibrado para 2 o 3 columnas en PC */
+  max-width: 100%; /* Evita que se desborde en pantallas muy chicas */
+  height: 255px; /* Alto fijo cuadrado */
+  object-fit: cover; /* Recorta la imagen proporcionalmente sin deformarla */
+  border-radius: 12px; /* Esquinas redondeadas de la foto */
+  border: 2px solid #e6e7ed; /* Borde claro alrededor de la foto */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Sombra elegante abajo */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Suaviza las animaciones al pasar el mouse */
+}
+
+/* Efecto al pasar el cursor sobre la imagen */
+img:hover {
+  transform: scale(1.03); /* Agranda ligeramente la imagen */
+  filter: brightness(1.1); /* Brillo un poco más intenso */
+}
+
+h6,
+.etiqueta-img {
+  font-size: 13px; /* Texto pequeño */
+  color: #aaa; /* Color gris */
+  text-align: center; /* Centrado */
+  margin-top: 6px; /* Separación con la imagen */
+  display: block; /* Ocupa su propia línea */
+}
+
+/* Decoración de separación con símbolos en el medio */
+.separador {
+  display: flex; /* Alinea las líneas laterales y el símbolo central */
+  align-items: center; /* Centra verticalmente */
+  gap: 12px; /* Espacio entre las líneas y el símbolo */
+  margin: 30px auto; /* Margen vertical */
+  color: #ffc5f0; /* Color rosa claro */
+  font-size: 25px; /* Tamaño del símbolo */
+}
+
+.separador::before,
+.separador::after {
+  content: ""; /* Necesario para renderizar las líneas */
+  flex: 1; /* Hace que ambas líneas ocupen el mismo ancho */
+  height: 1px; /* Grosor de la línea */
+  background: #8295ff; /* Color azul lavanda */
+}
+
+/* ==============================
+ENLACES
+============================== */
+
+.contenedor-link {
+  display: flex; /* Alinea los botones en fila */
+  justify-content: center; /* Centra los botones */
+  gap: 12px; /* Separa los botones entre sí */
+  flex-wrap: wrap; /* Permite que bajen de línea en celulares */
+  margin-top: 25px; /* Margen superior */
+}
+
+a {
+  display: inline-block; /* Permite aplicar padding y márgenes correctamente */
+  background: #1d2022; /* Fondo oscuro */
+  color: #fac4c4; /* Color de texto rosado claro */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+  text-decoration: none; /* Elimina el subrayado por defecto del enlace */
+  padding: 12px 24px; /* Espacio interno (dibuja la forma de botón) */
+  border: 1px solid #235bd3; /* Borde azul */
+  border-radius: 10px; /* Esquinas redondeadas del botón */
+  box-shadow: 2px 4px 15px rgba(143, 71, 71, 0.5); /* Sombra rojiza */
+  transition: all 0.3s ease; /* Suaviza cualquier cambio de estado */
+}
+
+/* Efecto al pasar el cursor sobre el enlace */
+a:hover {
+  background: #3f5f81; /* Cambia el fondo a un azul/gris */
+  color: #78d8e0; /* Cambia el color del texto a celeste */
+  transform: translateY(-3px); /* Eleva sutilmente el botón */
+}
+
+.link-home {
+  color: #5fed0e; /* Color verde específico para el enlace principal */
+}
+
+.link-home:hover {
+  color: #78d8e0; /* Color al pasar el mouse */
+  text-decoration: underline; /* Vuelve a mostrar subrayado al pasar el mouse */
+}
+
+/* ==============================
+PRECIOS
+============================== */
+
+.color-precio {
+  color: #44f320; /* Color verde brillante destacado para los montos */
+  font-weight: bold; /* Negrita para resaltar los precios */
+}
+
+/* ==============================
+ADAPTACIÓN PARA CELULARES (RESPONSIVE)
+============================== */
+
+/* Se aplica automáticamente en pantallas menores a 768px (tablets y celulares) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Reduce los márgenes de la pantalla */
+    align-items: flex-start; /* Alinea arriba para permitir scroll natural */
+  }
+
+  .contenedor-principal {
+    padding: 15px; /* Reduce el espacio interno de la tarjeta */
+    margin-top: 20px; /* Espacio superior moderado en móvil */
+    border-radius: 25px; /* Redondeo adaptado a móvil */
+  }
+
+  h1 {
+    font-size: 22px; /* Achica el título principal */
+  }
+
+  h2 {
+    font-size: 17px; /* Achica el subtítulo */
+  }
+
+  h3 {
+    font-size: 16px; /* Achica títulos internos para mejor visualización */
+  }
+
+  p {
+    font-size: 16px; /* Ajusta tamaño de lectura en móvil */
+    padding: 12px 16px; /* Reduce relleno lateral */
+  }
+
+  img {
+    width: 240px; /* Reduce el ancho de la foto en celulares */
+    height: 240px; /* Reduce el alto de la foto en celulares */
+  }
+}

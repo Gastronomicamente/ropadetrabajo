@@ -1,0 +1,272 @@
+/* ==============================
+CONFIGURACIÓN GENERAL
+============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("Fondogatronomic1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  margin: 0;
+  padding: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==============================
+CONTENEDOR PRINCIPAL
+============================== */
+
+.contenedor-principal {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.6); /* Un poco más oscuro para mayor contraste */
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 35px;
+  box-shadow: 0 10px 30px rgba(179, 77, 77, 0.77);
+}
+
+/* ==============================
+TÍTULO PRINCIPAL Y SUBTÍTULO
+============================== */
+
+.header-marca {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  background: rgba(169, 154, 154, 0.25);
+  font-size: 28px;
+  color: #4dd792;
+  padding: 15px 25px;
+  border: 1px solid #737a9c;
+  border-radius: 9999px;
+  box-shadow: 0 4px 15px rgba(75, 141, 86, 0.4);
+  text-shadow: 2px 4px 5px #830296;
+  margin: 0 0 12px 0;
+}
+
+h2 {
+  font-size: 21px;
+  color: #f3e8f5; /* Aclarado para que no se pierda sobre el fondo oscuro */
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0 2px 4px #2fde9e;
+  margin: 0;
+}
+
+/* ==============================
+SEPARADOR DECORATIVO
+============================== */
+
+.separador {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 22px auto;
+  color: #ffc5f0;
+  font-size: 24px;
+  text-shadow: 0 0 8px rgba(255, 197, 240, 0.5);
+}
+
+.separador::before,
+.separador::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #8295ff, transparent); /* Difuminado elegante */
+}
+
+/* ==============================
+TÍTULOS H3, H4 Y PÁRRAFOS
+============================== */
+
+h3 {
+  background: rgba(0, 0, 0, 0.55);
+  font-size: 20px;
+  text-align: center;
+  color: #4dd792;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  border: 2px solid #3e5cb5;
+  box-shadow: 2px 4px 12px #222;
+  text-shadow: 0 0 12px rgba(238, 248, 249, 0.6);
+  margin: 15px 0;
+}
+
+h4 {
+  color: #dec4e1;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin: 0 0 10px 0;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.info-detalles p {
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  color: #d9eddc;
+  padding: 15px 25px;
+  border-radius: 20px;
+  border: 1px solid #78d8e0;
+  box-shadow: 2px 4px 12px #514b4b;
+  text-shadow: 1px 1px 2px #0f0f0f;
+  margin: 15px 10px;
+}
+
+/* Destaca ligeramente la caja de precios */
+.info-detalles .precios-caja {
+  border-color: #4dd792;
+}
+
+.color-precio {
+  color: #44f320;
+  font-weight: bold;
+}
+
+/* ==============================
+IMAGEN Y ETIQUETA
+============================== */
+
+.contenedor-imagen {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.item-foto {
+  margin: 0;
+}
+
+.item-foto img {
+  display: block;
+  width: 245px;
+  max-width: 100%;
+  height: 245px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #e6e7ed;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.item-foto img:hover {
+  transform: scale(1.03);
+  filter: brightness(1.08);
+}
+
+.etiqueta-img {
+  font-size: 13px;
+  color: #bbb;
+  text-align: center;
+  margin-top: 6px;
+  display: block;
+}
+
+/* ==============================
+ENLACES Y BOTONES
+============================== */
+
+.contenedor-link {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.contenedor-link a {
+  display: inline-block;
+  background: #1d2022;
+  color: #fac4c4;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 1px solid #235bd3;
+  border-radius: 10px;
+  box-shadow: 2px 4px 15px rgba(143, 71, 71, 0.5);
+  transition: all 0.3s ease;
+}
+
+.contenedor-link a:hover {
+  background: #3f5f81;
+  color: #78d8e0;
+  transform: translateY(-3px);
+}
+
+.contenedor-link .link-home {
+  color: #5fed0e;
+}
+
+.contenedor-link .link-home:hover {
+  color: #78d8e0;
+  text-decoration: underline;
+}
+
+/* ==============================
+ADAPTACIÓN PARA CELULARES (RESPONSIVE)
+============================== */
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .contenedor-principal {
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 25px;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding: 12px 18px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .info-detalles p {
+    font-size: 16px;
+    padding: 12px 16px;
+    margin: 12px 0;
+  }
+
+  .item-foto img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .contenedor-link a {
+    width: 100%; /* En celular los botones ocupan todo el ancho para tocar fácil */
+    text-align: center;
+  }
+}

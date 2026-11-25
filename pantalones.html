@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- Declara que este documento es de tipo HTML5 -->
+<html lang="es"> <!-- Abre el documento HTML y define el idioma principal como español -->
+  <head> <!-- Abre la sección de metadatos, configuración y enlaces -->
+    <meta charset="UTF-8"> <!-- Configura la codificación de caracteres para leer tildes y eñes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la escala a celulares y tablets -->
+    <title>Gastronómicamente - Pantalones de trabajo</title> <!-- Título específico de esta sección en la pestaña -->
+    <link rel="stylesheet" href="style2.css"> <!-- Sugerencia: podés usar el mismo style1.css en todas las páginas -->
+  </head>
+
+  <body> <!-- Abre el cuerpo visible de la página web -->
+
+    <!-- Contenedor principal que envuelve y centra visualmente toda la tarjeta -->
+    <main class="contenedor-principal">
+
+      <!-- Encabezado que agrupa el título de la marca y su subtítulo -->
+      <header class="header-marca">
+        <h1>GASTRONÓMICAMENTE</h1> <!-- Título principal de la marca (único H1 por página) -->
+        <h2>Indumentaria de trabajo</h2> <!-- Subtítulo descriptivo de la marca -->
+      </header>
+
+      <!-- Separador visual decorativo -->
+      <div class="separador" aria-hidden="true">
+        <span>✧ ✄ ✧</span>
+      </div>
+
+      <!-- Sección semántica que agrupa la información del producto -->
+      <section class="card-producto">
+        <h3>PANTALONES</h3> <!-- Título de sección que indica la categoría -->
+
+        <!-- Contenedor que agrupa las fotografías de los tres modelos -->
+        <div class="contenedor-imagen">
+
+          <figure class="item-foto">
+            <h4>Pantalones de Acrocel</h4> <!-- Corregido: "Pantalones" y jerarquía H4 -->
+            <img src="pantalosnesacrocel1.jpg" alt="Pantalones de Acrocel"> <!-- Se mantiene tu nombre de archivo exacto -->
+            <figcaption class="etiqueta-img">Public Image</figcaption>
+          </figure>
+
+          <figure class="item-foto">
+            <h4>Pantalones de Bengalina</h4> <!-- Corregido: "Pantalones" y jerarquía H4 -->
+            <img src="pantalonbengalina1.jpg" alt="Pantalón de Bengalina Rayado">
+            <figcaption class="etiqueta-img">Public Image</figcaption>
+          </figure>
+
+          <figure class="item-foto">
+            <h4>Pantalones de Gabardina</h4> <!-- Corregido: jerarquía H4 -->
+            <img src="pantalosgavardina1.jpg" alt="Pantalón Elastizado de Gabardina"> <!-- Se mantiene tu nombre de archivo exacto -->
+            <figcaption class="etiqueta-img">Public Image</figcaption>
+          </figure>
+
+        </div>
+
+        <!-- Contenedor que agrupa los párrafos informativos -->
+        <div class="info-detalles">
+
+          <!-- Especificaciones de colores y talles disponibles -->
+          <p>
+            <strong>Colores:</strong> Blanco / Negro.<br>
+            <strong>Talles:</strong> S / M / L / XL / 2XL / 3XL / 4XL
+          </p>
+
+          <!-- Precios según la calidad de tela (actualizado para pantalones) -->
+          <p class="precios-caja">
+            Acrocel: <span class="color-precio">$24.000.-</span><br>
+            Bengalina: <span class="color-precio">$28.000.-</span><br> <!-- Agregado para coincidir con la 2da foto -->
+            Gabardina: <span class="color-precio">$28.000.-</span>
+          </p>
+        </div>
+
+        <!-- Contenedor de botones de navegación -->
+        <nav class="contenedor-link" aria-label="Navegación entre categorías">
+          <a href="chaquetas.html">◀ Volver a Chaquetas</a>
+          <a href="index.html" class="link-home">Página Principal</a>
+          <a href="casacas.html">Ir a Casacas ▶</a>
+        </nav>
+
+      </section> <!-- Cierra la sección del producto -->
+    </main> <!-- Cierra el contenedor principal -->
+  </body>
+</html>

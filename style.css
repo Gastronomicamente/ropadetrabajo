@@ -1,0 +1,159 @@
+main {
+  max-width: 80%; /* El contenedor ocupa hasta el 80% del ancho de la pantalla */
+  margin: auto; /* Centra el bloque horizontalmente */
+  padding: 15px; /* Espacio interno de 15px en los cuatro lados */
+  background: rgba(54, 61, 89, 0.45); /* Fondo azul grisáceo con 45% de opacidad */
+  border-radius: 20px; /* Redondea las esquinas 20px */
+}
+
+body {
+  background-image: url("Gastronomica.jpg"); /* Carga la imagen de fondo */
+  background-size: cover; /* Escala la foto para cubrir toda la pantalla sin deformarse */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita como mosaico */
+  background-attachment: fixed; /* Mantiene el fondo fijo al desplazar la página */
+  margin: 8px; /* Margen exterior alrededor de toda la página */
+  padding: 5px; /* Espacio interno para que el contenido no toque los bordes */
+}
+
+p {
+  background: rgba(0, 0, 0, 0.35); /* Fondo negro semitransparente (35% de opacidad) */
+  font-size: 22px; /* Tamaño de la letra */
+  color: #d9c4c4; /* Color rosado claro para el texto */
+  text-align: center; /* Centra el texto */
+  line-height: 1.4; /* Altura entre renglones */
+  text-shadow: 2px 2px 3px #010101; /* Sombra oscura detrás de las letras */
+  font-family: Arial, sans-serif; /* Tipografía Arial o alternativa sin remates */
+  padding: 12px; /* Espacio interno para que el texto no toque el borde del fondo */
+  border-radius: 12px; /* Suaviza las esquinas del recuadro del párrafo */
+}
+
+h1 {
+  background: rgba(69, 140, 139, 0.7); /* Fondo verde azulado con 70% de opacidad */
+  font-size: 26px; /* Tamaño grande para el título principal */
+  text-align: center; /* Centra el título */
+  color: #d9eddc; /* Color verde muy claro para las letras */
+  padding: 12px 15px; /* Corregido: 12px arriba/abajo y 15px a los lados */
+  border-radius: 15px; /* Redondea las esquinas 15px */
+  border: 2px solid #3b2caa; /* Borde sólido de 2px color azul violáceo */
+  box-shadow: 2px 4px 1px #222; /* Sombra exterior del recuadro */
+  text-shadow: 2px 2px 2px #000; /* Sombra negra en las letras */
+  margin-top: 25px; /* Separación superior de 25px */
+}
+
+h2 {
+  font-size: 18px; /* Tamaño del subtítulo */
+  text-align: center; /* Centra el texto */
+  color: #f2e4e8; /* Color blanco rosado */
+  text-shadow: -2px 3px 3px #4d303e; /* Sombra desplazada a la izquierda y abajo */
+  margin: 5px auto 15px auto; /* Corregido: 5px arriba, centrado horizontal y 15px abajo */
+  letter-spacing: 1px; /* Separación de 1px entre letras */
+}
+
+h3 {
+  background: rgba(0, 0, 0, 0.70); /* Fondo negro con 70% de opacidad */
+  font-size: 22px; /* Tamaño de los títulos de sección */
+  text-align: center; /* Centra el texto */
+  color: #d9eddc; /* Color de texto verde muy claro */
+  padding: 10px 15px; /* Corregido: 10px arriba/abajo y 15px a los lados */
+  border-radius: 15px; /* Redondea las esquinas 15px */
+  border: 2px solid #52c7be; /* Borde sólido de 2px color turquesa */
+  box-shadow: 2px 4px 12px #222; /* Sombra exterior del recuadro */
+  text-shadow: 2px 2px 2px #000; /* Sombra negra en las letras */
+  margin-top: 10px; /* Separación superior de 10px */
+}
+
+/* Aplica este estilo a las listas de productos (si usas <ol> o class="lista-productos") */
+ol {
+  background: rgba(37, 34, 34, 0.4); /* Fondo gris oscuro semitransparente */
+  color: #cc2e2e; /* Color rojo para los números de la lista */
+  font-family: Arial, sans-serif; /* Tipografía Arial */
+  font-size: 18px; /* Tamaño de letra */
+  padding: 20px 45px; /* Espacio interno: 20px vertical y 45px horizontal */
+  border: 2px solid #75dbe1; /* Borde sólido de 2px color celeste */
+  border-radius: 15px; /* Redondea las esquinas 15px */
+  box-shadow: 2px 4px 15px #5555db; /* Sombra exterior azulada */
+  line-height: 1.5; /* Espacio entre renglones */
+  width: max-content; /* Ajusta el ancho de la caja al texto más largo */
+  max-width: 80%; /* Evita que la caja supere el 80% del contenedor */
+  margin: 15px auto; /* 15px arriba/abajo y centrado horizontal */
+}
+
+li {
+  background: rgba(25, 135, 19, 0.18); /* Fondo verde tenue semitransparente */
+  color: #efddf0; /* Color lila claro para el texto de los ítems */
+  font-size: 18px; /* Tamaño de letra */
+  padding: 7px 10px; /* Espacio interno de cada ítem */
+  margin: 5px auto; /* Separación vertical entre ítems */
+  border-radius: 2px; /* Redondea ligeramente cada renglón */
+}
+
+/* Lista final de talles y colores */
+ul {
+  background: rgba(2, 2, 2, 0.31); /* Fondo oscuro con 31% de opacidad */
+  color: #dfcb65; /* Color amarillo dorado para las viñetas */
+  font-family: monospace, sans-serif; /* Corregido: tipografía monoespaciada */
+  font-size: 16px; /* Tamaño de letra */
+  padding: 15px 40px; /* Espacio interno vertical y horizontal */
+  border: 1px solid #3b4ed6; /* Borde sólido de 2px color azul */
+  border-radius: 12px; /* Redondea las esquinas 20px */
+  box-shadow: 2px 2px 20px #615656; /* Sombra exterior grisácea */
+  line-height: 1.4; /* Espacio entre renglones */
+  max-width: 80%; /* Ancho máximo del 80% */
+  width: max-content; /* Ajusta el ancho al contenido */
+  margin: 10px auto; /* 10px arriba/abajo y centrado horizontal */
+}
+
+/* Separador decorativo con líneas laterales */
+.separador {
+  display: flex; /* Activa Flexbox para alinear líneas y símbolos */
+  align-items: center; /* Centra verticalmente las líneas con los símbolos */
+  margin: 30px auto; /* 30px arriba/abajo y centrado */
+  color: #ffc5f0; /* Color rosa claro para los símbolos */
+  font-size: 25px; /* Tamaño de los símbolos decorativos */
+}
+
+.separador::before,
+.separador::after {
+  content: ""; /* Crea los elementos decorativos vacíos antes y después del texto */
+  flex: 1; /* Hace que ambas líneas se estiren por igual */
+  height: 1px; /* Grosor de 1px para la línea */
+  background: #8295ff; /* Color azul lavanda para las líneas */
+}
+
+/* Botón de contacto */
+.contacto {
+  display: block; /* Permite aplicar ancho y centrar con margin auto */
+  width: 200px; /* Aumentado a 200px para que la palabra entre cómoda */
+  margin: 30px auto; /* 30px arriba/abajo y centrado horizontal */
+  padding: 5px; /* Espacio interno del botón */
+  background: rgba(229, 33, 122, 0.76); /* Fondo violeta semitransparente */
+  color: #f1e4e4; /* Color blanco rosado para el texto */
+  text-align: center; /* Centra el texto dentro del botón */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  font-size: 18px; /* Tamaño de letra */
+  font-family: monospace, sans-serif; /* Tipografía monoespaciada */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 10px; /* Redondea las esquinas 10px */
+  box-shadow: 2px 4px 10px #b6a0a0; /* Sombra exterior clara */
+  transition: background 0.3s ease; /* Suaviza el cambio de color al pasar el mouse */
+}
+
+/* Efecto al pasar el cursor por encima del botón */
+.contacto:hover {
+  background: rgba(12, 235, 38, 0.72); /* Cambia el fondo a verde brillante */
+}
+
+/* Enlaces de cada producto en las listas */
+.enlace-producto {
+  color: #eadaec; /* Color CZSI BLANCO para los nombres de productos */
+  text-decoration: none; /* Quita el subrayado automático */
+  transition: color 0.2s ease; /* Suaviza el cambio de color */
+  border: 1px solid #2893bf; /* Borde sólido de 2px color azul */
+  border-radius: 50px; /* Redondea las esquinas 20px */
+  padding: 2px 40px; /* Espacio interno vertical y horizontal */
+}
+
+.enlace-producto:hover {
+  color: #32e75c; /* Cambia a blanco al pasar el mouse para dar feedback visual */
+}

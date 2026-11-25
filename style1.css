@@ -1,0 +1,250 @@
+/* ==============================
+CONFIGURACIÓN GENERAL
+============================== */
+
+/* Aplica border-box para que padding y border no sumen ancho extra */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos de la página completa */
+body {
+  background-image: url("Fondogatronomic1.jpg"); /* Imagen de fondo */
+  background-size: cover; /* Cubre toda la pantalla sin deformarse */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-attachment: fixed; /* Fija el fondo al hacer scroll */
+
+  margin: 0; /* Quita márgenes por defecto del navegador */
+  padding: 20px; /* Espacio de respiro en los bordes de la pantalla */
+
+  font-family: Arial, Helvetica, sans-serif; /* Tipografía general con respaldos */
+  min-height: 100vh; /* Ocupa al menos el 100% del alto de la ventana */
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+/* ==============================
+CONTENEDOR PRINCIPAL
+============================== */
+
+.contenedor-principal {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 900px; /* Tope máximo de ancho en pantallas grandes */
+  margin: auto; /* Centra el bloque */
+  padding: 30px; /* Espacio interno de la tarjeta */
+
+  background: rgba(0, 0, 0, 0.55); /* Fondo negro semitransparente */
+  backdrop-filter: blur(4px); /* Efecto vidrio esmerilado */
+  border-radius: 30px; /* Redondeo equilibrado para no recortar contenido */
+  box-shadow: 0 10px 30px rgba(179, 77, 77, 0.77); /* Sombra rojiza difuminada */
+}
+
+/* ==============================
+TÍTULO PRINCIPAL Y SUBTÍTULO
+============================== */
+
+.header-marca {
+  text-align: center; /* Centra todo el bloque del encabezado */
+  margin-bottom: 20px; /* Separación inferior */
+}
+
+h1 {
+  background: rgba(169, 154, 154, 0.3); /* Fondo gris semitransparente */
+  font-size: 28px; /* Tamaño del título principal */
+  color: #4dd792; /* Texto verde menta */
+  padding: 15px 25px; /* Espacio interno */
+  border: 1px solid #737a9c; /* Borde gris azulado */
+  border-radius: 9999px; /* Forma de píldora perfecta */
+  box-shadow: 0 4px 15px rgba(75, 141, 86, 0.4); /* Sombra verde sutil */
+  text-shadow: 2px 3px 5px #830296; /* Sombra violeta en las letras */
+  margin: 0 0 12px 0; /* Separa el título del subtítulo */
+}
+
+h2 {
+  font-size: 21px; /* Tamaño del subtítulo */
+  color: #231524; /* Texto lila claro */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  text-align: center; /* centra el titulo*/
+  text-shadow: 0 2px 3px #2fde9e; /* Resplandor verde detrás del texto */
+  margin: 0; /* Limpia márgenes por defecto */
+}
+
+.separador-hr {
+  border: 0; /* Quita el borde 3D por defecto */
+  height: 2px; /* Grosor de la línea */
+  background: #b53e3e; /* Color rojo */
+  margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+/* ==============================
+TÍTULOS H3 Y PÁRRAFOS
+============================== */
+
+h3 {
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro al 50% */
+  font-size: 20px; /* Tamaño de subtítulo de sección */
+  text-align: center; /* Texto centrado */
+  color: #4dd792; /* Texto verde menta */
+  padding: 12px 20px; /* Espacio interno */
+  border-radius: 9999px; /* Forma de píldora */
+  border: 2px solid #3e5cb5; /* Borde azul */
+  box-shadow: 2px 4px 12px #222; /* Sombra oscura */
+  text-shadow: 0px 0px 12px #102021; /* Brillo suave en el texto */
+  margin: 15px 0; /* Margen vertical */
+}
+
+p {
+  background: rgba(0, 0, 0, 0.75); /* Fondo oscuro para buena lectura */
+  font-size: 18px; /* Tamaño de lectura cómodo */
+  line-height: 1.8; /* Interlineado amplio */
+  text-align: center; /* Texto centrado */
+  color: #d9eddc; /* Verde muy claro */
+  padding: 15px 25px; /* Espacio interno */
+  border-radius: 20px; /* Esquinas redondeadas */
+  border: 1px solid #78d8e0; /* Borde celeste */
+  box-shadow: 2px 4px 12px #514b4b; /* Sombra gris */
+  text-shadow: 1px 1px 2px #0f0f0f; /* Sombra sutil para contraste */
+  margin: 15px 10px; /* Margen exterior */
+}
+
+/* ==============================
+IMAGEN Y ETIQUETA
+============================== */
+
+.contenedor-imagen {
+  text-align: center; /* Centra contenido inline */
+  margin: 20px 0; /* Margen vertical */
+}
+
+img {
+  display: block; /* Permite centrar con margin auto */
+  width: 280px; /* Ancho fijo */
+  max-width: 100%; /* Evita desbordes en pantallas muy pequeñas */
+  height: 280px; /* Alto fijo */
+  object-fit: cover; /* Recorta la foto sin estirarla */
+  border-radius: 12px; /* Esquinas redondeadas */
+  border: 2px solid #e6e7ed; /* Marco claro */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Sombra profunda */
+  margin: 0 auto; /* Centra la imagen */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Animación suave */
+}
+
+img:hover {
+  transform: scale(1.03); /* Zoom sutil al pasar el cursor */
+  filter: brightness(1.1); /* Aumenta levemente el brillo */
+}
+
+h6,
+.etiqueta-img {
+  font-size: 13px; /* Texto pequeño para pie de foto */
+  color: #aaa; /* Gris claro */
+  text-align: center; /* Centrado */
+  margin: 6px 0 0 0; /* Separación superior */
+  display: block; /* Ocupa todo el ancho */
+}
+
+/* Separador decorativo con texto o ícono en el medio */
+.separador {
+  display: flex; /* Alinea las líneas laterales y el contenido central */
+  align-items: center; /* Centra verticalmente */
+  gap: 12px; /* Espacio entre las líneas y el símbolo central */
+  margin: 30px auto; /* Margen vertical */
+  color: #ffc5f0; /* Color rosa claro para el símbolo central */
+  font-size: 25px; /* Tamaño del símbolo */
+}
+
+.separador::before,
+.separador::after {
+  content: ""; /* Necesario para renderizar los pseudoelementos */
+  flex: 1; /* Hace que ambas líneas ocupen el mismo ancho */
+  height: 1px; /* Grosor de la línea */
+  background: #8295ff; /* Color azul lavanda */
+}
+
+/* ==============================
+ENLACES Y BOTONES
+============================== */
+
+.contenedor-link {
+  text-align: center; /* Centra el botón */
+  margin-top: 25px; /* Separación superior */
+}
+
+a {
+  display: inline-block; /* Permite aplicar padding y transformaciones */
+  background: #1d2022; /* Fondo oscuro */
+  color: #fac4c4; /* Texto rosado claro */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  text-decoration: none; /* Quita el subrayado */
+  padding: 12px 24px; /* Relleno tipo botón */
+  border: 1px solid #235bd3; /* Borde azul */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 2px 4px 15px rgba(143, 71, 71, 0.5); /* Sombra rojiza */
+  transition: all 0.3s ease; /* Suaviza el cambio al pasar el mouse */
+}
+
+a:hover {
+  background: #3f5f81; /* Fondo azul grisáceo */
+  color: #78d8e0; /* Texto celeste */
+  transform: translateY(-3px); /* Efecto de elevación */
+}
+
+.link-home {
+  color: #5fed0e; /* Verde brillante para botón de inicio */
+}
+
+.link-home:hover {
+  color: #78d8e0; /* Cambia a celeste al pasar el mouse */
+  text-decoration: underline; /* Muestra subrayado */
+}
+
+/* ==============================
+PRECIOS
+============================== */
+
+.color-precio {
+  color: #44f320; /* Verde brillante para destacar precios */
+  font-weight: bold; /* Negrita */
+}
+
+/* ==============================
+ADAPTACIÓN PARA CELULARES (RESPONSIVE)
+============================== */
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Reduce margen exterior */
+    align-items: flex-start; /* Alinea arriba para permitir scroll natural */
+  }
+
+  .contenedor-principal {
+    padding: 15px; /* Reduce relleno interno */
+    margin-top: 20px; /* Separación superior */
+    border-radius: 25px; /* Redondeo adaptado a móvil */
+  }
+
+  h1 {
+    font-size: 22px; /* Achica título principal */
+  }
+
+  h2 {
+    font-size: 17px; /* Achica subtítulo */
+  }
+
+  h3 {
+    font-size: 16px; /* Achica títulos de sección */
+  }
+
+  p {
+    font-size: 16px; /* Ajusta tamaño de lectura en celular */
+    padding: 12px 16px; /* Reduce relleno lateral */
+  }
+
+  img {
+    width: 240px; /* Reduce ancho de imagen */
+    height: 240px; /* Reduce alto de imagen */
+  }
+}
