@@ -1,6 +1,9 @@
+/* Importa desde Google Fonts las familias tipográficas Montserrat (600 y 700) e Inter (400 y 600) */
+@import url('https://googleapis.com');
+
 main {
-  max-width: 80%; /* El contenedor ocupa hasta el 80% del ancho de la pantalla */
-  margin: auto; /* Centra el bloque horizontalmente */
+  max-width: 80%; /* El contenedor principal ocupa hasta el 80% del ancho de la pantalla */
+  margin: auto; /* Centra el bloque horizontalmente en la página */
   padding: 15px; /* Espacio interno de 15px en los cuatro lados */
   background: rgba(54, 61, 89, 0.45); /* Fondo azul grisáceo con 45% de opacidad */
   border-radius: 20px; /* Redondea las esquinas 20px */
@@ -14,6 +17,7 @@ body {
   background-attachment: fixed; /* Mantiene el fondo fijo al desplazar la página */
   margin: 8px; /* Margen exterior alrededor de toda la página */
   padding: 5px; /* Espacio interno para que el contenido no toque los bordes */
+  font-family: 'Inter', sans-serif; /* Define Inter como tipografía base para toda la web */
 }
 
 p {
