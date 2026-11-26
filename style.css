@@ -9,16 +9,28 @@ main {
   border-radius: 20px; /* Redondea las esquinas 20px */
 }
 
+/* Estilos de la página completa */
 body {
-  background-image: url("Gastronomica.jpg"); /* Carga la imagen de fondo */
-  background-size: cover; /* Escala la foto para cubrir toda la pantalla sin deformarse */
-  background-position: center; /* Centra la imagen de fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita como mosaico */
-  background-attachment: fixed; /* Mantiene el fondo fijo al desplazar la página */
-  margin: 8px; /* Margen exterior alrededor de toda la página */
-  padding: 5px; /* Espacio interno para que el contenido no toque los bordes */
-  font-family: 'Inter', sans-serif; /* Define Inter como tipografía base para toda la web */
+  /* Capa oscura encima de la foto para que el texto lila claro siempre se lea bien */
+  background-image: linear-gradient(rgba(18, 12, 20, 0.72), rgba(18, 12, 20, 0.72)), url("Gastronomica.jpg");
+  background-size: contain; /* Muestra la imagen completa y más chica sin recortarla */
+  background-position: center top; /* La ubica centrada arriba */
+  background-repeat: no-repeat;
+  background-color: #120c14; /* Color oscuro que rellena el espacio sobrante alrededor de la foto */
+  min-height: 100vh; /* Asegura que el fondo cubra al menos el 100% de la altura de la pantalla */
+  margin: 0; /* Evita bordes blancos alrededor de la página */
+  padding: 15px;
+  box-sizing: border-box; /* Evita que el padding genere barras de desplazamiento horizontal */
 }
+
+/* Ajuste específico para celulares (pantallas menores a 768px) */
+@media (max-width: 768px) {
+  body {
+    background-size: 80% auto; /* Reduce el ancho de la foto al 80% del celular para que respire */
+    background-position: center 20px; /* Le da un pequeño margen superior en móvil */
+  }
+}
+
 
 p {
   background: rgba(0, 0, 0, 0.35); /* Fondo negro semitransparente (35% de opacidad) */
