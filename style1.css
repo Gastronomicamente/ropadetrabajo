@@ -9,21 +9,26 @@ CONFIGURACIÓN GENERAL
 
 /* Estilos de la página completa */
 body {
-  background-image: url("Fondogatronomic1.jpg"); /* Imagen de fondo */
-  background-size: cover; /* Cubre toda la pantalla sin deformarse */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que se repita */
-  background-attachment: fixed; /* Fija el fondo al hacer scroll */
-
-  margin: 0; /* Quita márgenes por defecto del navegador */
-  padding: 20px; /* Espacio de respiro en los bordes de la pantalla */
-
-  font-family: Arial, Helvetica, sans-serif; /* Tipografía general con respaldos */
-  min-height: 100vh; /* Ocupa al menos el 100% del alto de la ventana */
-  display: flex; /* Activa Flexbox */
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  /* Capa oscura encima de la foto para que el texto lila claro siempre se lea bien */
+  background-image: linear-gradient(rgba(18, 12, 20, 0.72), rgba(18, 12, 20, 0.72)), url("Gastronomica.jpg");
+  background-size: contain; /* Muestra la imagen completa y más chica sin recortarla */
+  background-position: center top; /* La ubica centrada arriba */
+  background-repeat: no-repeat;
+  background-color: #120c14; /* Color oscuro que rellena el espacio sobrante alrededor de la foto */
+  min-height: 100vh; /* Asegura que el fondo cubra al menos el 100% de la altura de la pantalla */
+  margin: 0; /* Evita bordes blancos alrededor de la página */
+  padding: 15px;
+  box-sizing: border-box; /* Evita que el padding genere barras de desplazamiento horizontal */
 }
+
+/* Ajuste específico para celulares (pantallas menores a 768px) */
+@media (max-width: 768px) {
+  body {
+    background-size: 80% auto; /* Reduce el ancho de la foto al 80% del celular para que respire */
+    background-position: center 20px; /* Le da un pequeño margen superior en móvil */
+  }
+}
+
 
 /* ==============================
 CONTENEDOR PRINCIPAL
