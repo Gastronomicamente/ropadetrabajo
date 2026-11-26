@@ -1,1 +1,1 @@
-# ropadetrabajo
+Ropa de trabajo para gastronomicos.
