@@ -83,8 +83,8 @@ li {
   background: rgba(25, 135, 19, 0.18); /* Fondo verde tenue semitransparente */
   color: #efddf0; /* Color lila claro para el texto de los ítems */
   font-size: 18px; /* Tamaño de letra */
-  padding: 7px 10px; /* Espacio interno de cada ítem */
-  margin: 5px auto; /* Separación vertical entre ítems */
+  padding: 27px 20px; /* Espacio interno de cada ítem */
+  margin: 2px auto; /* Separación vertical entre ítems */
   border-radius: 2px; /* Redondea ligeramente cada renglón */
 }
 
@@ -150,10 +150,69 @@ ul {
   text-decoration: none; /* Quita el subrayado automático */
   transition: color 0.2s ease; /* Suaviza el cambio de color */
   border: 1px solid #2893bf; /* Borde sólido de 2px color azul */
-  border-radius: 50px; /* Redondea las esquinas 20px */
-  padding: 2px 40px; /* Espacio interno vertical y horizontal */
+  border-radius: 10px; /* Redondea las esquinas 20px */
+  /*padding: 2px 0px; /* Espacio interno vertical y horizontal */
+  padding: 2px 2px 2px 2px;/*Controla cada lado en sentido horario: arriba, derecha, abajo e izquierda.*/
+ 
 }
 
 .enlace-producto:hover {
   color: #32e75c; /* Cambia a blanco al pasar el mouse para dar feedback visual */
+}
+
+/* =========================================
+   ADAPTACIÓN PARA CELULARES (MÓVILES)
+   ========================================= */
+@media (max-width: 600px) {
+  
+  body {
+    margin: 2px;
+    padding: 2px;
+    background-attachment: scroll; /* Evita fallos de zoom en fondos fijos de celulares */
+  }
+
+  main {
+    max-width: 96%; /* Aprovecha casi todo el ancho de la pantalla */
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 22px; /* Reduce un poco el título para que no ocupe demasiados renglones */
+    padding: 10px;
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 19px;
+    padding: 8px 10px;
+  }
+
+  p {
+    font-size: 17px; /* Texto más cómodo para leer en pantalla chica */
+    padding: 10px;
+  }
+
+  /* Ajuste clave para que las listas no se desborden ni queden muy angostas */
+  ol, ul {
+    width: auto; /* Anula el max-content que puede romper el diseño en móvil */
+    max-width: 95%;
+    padding: 15px 25px 15px 35px; /* Menos relleno lateral para dar espacio al texto */
+    font-size: 16px;
+  }
+
+  li {
+    font-size: 16px;
+    padding: 15px 12px; /* Reduce el relleno vertical excesivo de 27px */
+  }
+
+  .contacto {
+    width: 80%; /* Botón más ancho y fácil de tocar con el dedo */
+    padding: 12px;
+    font-size: 17px;
+  }
 }
