@@ -156,7 +156,7 @@ ul {
   text-align: center; /* Centra el texto dentro del botón */
   text-decoration: none; /* Quita el subrayado del enlace */
   font-family: 'Montserrat', sans-serif; /* Tipografía moderna y firme para llamadas a la acción */
-  font-size: 16px; /* Tamaño de letra del botón */
+  font-size: 14px; /* Tamaño de letra del botón */
   font-weight: 600; /* Grosor seminegrita para resaltar el texto */
   letter-spacing: 0.5px; /* Ligera separación entre letras */
   border-radius: 10px; /* Redondea las esquinas 10px */
